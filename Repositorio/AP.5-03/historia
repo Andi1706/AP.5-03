@@ -1,0 +1,38 @@
+const contarHistoria = () => {
+    console.log("Esta es una pequeña historia de mi vida.");
+    empezarViaje();
+};
+const empezarViaje = () => {
+    const etapas = ["niñez", "adolescencia", "universidad"];
+
+    for (let i = 0; i < etapas.length; i++) {
+        console.log(`En mi ${etapas[i]} aprendí algo importante.`);
+    }
+
+    tomarDecision(20);
+};
+const tomarDecision = (edad) => {
+    if (edad < 18) {
+        console.log("Cuando era joven soñaba con descubrir el mundo.");
+    } else if (edad >= 18 && edad < 25) {
+        console.log(`A los ${edad} años descubrí mi pasión por la programación.`);
+    } else {
+        console.log("Ahora sigo construyendo mi futuro paso a paso.");
+    }
+
+    momentosFelices();
+};
+const momentosFelices = () => {
+    let recuerdos = 3;
+
+    while (recuerdos > 0) {
+        console.log("Recuerdo un momento feliz que me motivó a seguir adelante.");
+        recuerdos--;
+    }
+
+    console.log("Y así continúa mi historia.");
+};
+
+// Ejecutar la historia
+contarHistoria();
+//Andis Daniel POlo Doria
